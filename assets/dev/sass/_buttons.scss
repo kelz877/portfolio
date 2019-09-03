@@ -1,0 +1,90 @@
+.line-btn-light{
+  border: 1px solid $white;
+  padding: 10px 30px;
+  color: $white;
+
+  &:hover {
+    color: $white;
+    border-color: transparent;
+    background: $theme-color;
+  }
+}
+
+.line-btn-dark{
+  border: 1px solid $black;
+  padding: 10px 30px;
+  color: $black;
+  background: transparent;
+  &:hover {
+    color: $white;
+    border-color: transparent;
+    background: $theme-color;
+  }
+}
+
+
+.solid-btn-light{
+  background: $white;
+  border: 1px solid $white;
+  padding: 10px 30px;
+  color: $black;
+  &:hover {
+    color: $white;
+    background: $theme-color;
+    border: 1px solid $theme-color;
+  }
+}
+
+.solid-btn-dark{
+  background: $black;
+  border: 1px solid $black;
+  padding: 10px 30px;
+  color: $white;
+  &:hover,&:focus {
+    color: $white;
+    background: $theme-color;
+    border: 1px solid $theme-color;
+    outline: none;
+  }
+}
+
+
+.solid-btn-theme{
+  background: $theme-color;
+  border: 1px solid $theme-color;
+  padding: 10px 30px;
+  color: $white;
+  &:hover {
+    color: $white;
+    background: darken($theme-color, 10%);
+    border: 1px solid darken($theme-color, 10%);
+  }
+}
+
+.btn-capsule {
+  border-radius: 30px;
+}
+
+.btn-radius {
+  border-radius: 3px;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+  padding: 5px 10px !important;
+  font-size: 12px !important;;
+  line-height: 1.5 !important;;
+}
+
+.btn-icon {
+  i{
+    padding-right: 10px;
+  }
+}
+
+
+@media (max-width: 480px)
+{
+  .btn {
+    margin-bottom: 5px;
+  }
+}

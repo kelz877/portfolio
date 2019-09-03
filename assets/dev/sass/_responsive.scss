@@ -1,0 +1,255 @@
+@media (max-width: 479px) {
+  .about-info .media-left,
+  .media-body{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .about-info .media-left{
+    padding-right: 0;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+  .about-thumb img{
+    float: none;
+    display: inherit;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+}
+
+
+@media (max-width: 568px) {
+  .hero .hero-content, .content.promo-txt {
+    padding-top: 70px;
+  }
+
+  .info-list li{
+    width: auto !important;
+    float: none !important;;
+  }
+
+  .about-info .media-left,
+  .media-body{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .about-info .media-left{
+    padding-right: 0;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+  .about-thumb img{
+    float: none;
+    display: inherit;
+    margin-bottom: 20px;
+  }
+
+  .about-info.m-bot-100 {
+    margin-bottom: 50px !important;
+  }
+}
+
+
+@media (max-width: 667px) {
+
+  .hero .hero-content, .content.promo-txt{
+    padding-top: 80px;
+  }
+
+  .hero .hero-content h1, .content h1 {
+    font-size: 2rem;
+  }
+  .hero .hero-content .hero-subtitle, .content .subtitle {
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 0;
+    letter-spacing: .1rem;
+    text-shadow: none;
+  }
+
+  .line-btn-light {
+    padding: 8px 20px;
+  }
+
+  .content .group-button{
+    margin-top: 10px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .demo-info h4{
+    font-size: 14px;
+  }
+
+  .hero .hero-content, .content.promo-txt{
+    padding-top: 80px;
+  }
+  .hero .hero-content h1, .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero .hero-content .hero-subtitle, .content .subtitle {
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 1.5em;
+    letter-spacing: .1rem;
+    text-shadow: none;
+  }
+
+  .btn{
+    font-size: 11px;
+  }
+  .go-down{
+    display: none;
+  }
+
+  .section-title .title {
+    font-size: 1.250em;
+  }
+
+  .separator::before,
+  .separator::after{
+    height: 1.5em;
+  }
+
+  .quote h1 {
+    font-size: 1.3em;
+  }
+  .parallax-promo h2 {
+    font-size: 1.2em;
+    margin-top: 5px !important;
+    margin-bottom: 20px;
+  }
+
+  .parallax-promo,
+  .parallax-promo .text-right{
+    text-align: center;
+  }
+
+  #testimonial-list p{
+    font-size: 16px;
+  }
+
+  #testimonial-list .testimonial-meta{
+    font-size: 12px;
+  }
+
+  .post-meta h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px !important;
+  }
+
+  .post-meta .date,
+  .post-meta .category {
+    font-size: 12px;
+  }
+
+  .intro-banner, .hero-short-banner {
+    height: 300px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .video-banner h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero.hero-short-banner .hero-content h2 {
+    font-size: 2.4rem;
+    line-height: 1.5em;
+  }
+
+  .hero.hero-short-banner .m-top-100 {
+    margin-top: 50px !important;
+  }
+
+  .typist-blink:after {
+    height: 22px;
+  }
+
+  .pricing-table .pricing-item h2 {
+    font-size: 24px;
+  }
+
+  .info-list li{
+    width: 50%;
+    float: left;
+  }
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 736px) {
+
+
+  .hero .hero-content h1, .content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero .hero-content .hero-subtitle, .content .subtitle {
+    font-size: 1.2em;
+    line-height: 2em;
+    margin-bottom: 1.5em;
+    letter-spacing: .1rem;
+    text-shadow: none;
+  }
+
+  .quote h1 {
+    font-size: 2em;
+  }
+
+  .parallax-promo h2 {
+    font-size: 1.5em;
+    margin-top: 10px !important;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .video-banner h1 {
+    font-size: 3.4rem;
+  }
+  .typist-blink:after {
+    height: 22px;
+  }
+  .navbar-brand {
+    padding: 5px 3px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px) {
+
+  .content {
+    width: 100%;
+  }
+
+  .video-banner h1 {
+    font-size: 3.4rem;
+  }
+
+  .typist-blink:after {
+    height: 22px;
+  }
+
+  .parallax-promo h2 {
+    font-size: 1.5em;
+    margin-top: 10px !important;
+  }
+
+}

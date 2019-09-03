@@ -1,0 +1,143 @@
+/* accordion and toggle style */
+.panel-accordion {
+  .panel-default {
+    border-radius: 0;
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: none;
+
+    .panel-body {
+      border-top: none !important;
+    }
+    .panel-heading {
+      background-color: transparent;
+      padding: 0;
+      .panel-title {
+        position: relative;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.8;
+        a {
+          padding: 10px 15px;
+          display: block;
+          background-color: transparent;
+          border: 1px solid $gray-light;
+          text-decoration: none;
+          &:hover, &:active {
+            color: $white;
+            background-color: $black-light;
+            border: 1px solid $black-light;
+          }
+          &:focus {
+//            color: inherit;
+          }
+
+        }
+
+        a::after {
+          content: "+";
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          position: absolute;
+          height: 20px;
+          width: 20px;
+          right: 12px;
+          top: 50%;
+          margin-top: -10px;
+          line-height: 1.1;
+          font-size: 18px;
+          color: inherit;
+          text-align: center; }
+
+        a[aria-expanded="true"] {
+          color: $white;
+          background-color: $black-light;
+          border: 1px solid $black-light;
+        }
+
+        a[aria-expanded="true"]::after {
+          content: "-"; }
+      }
+    }
+
+  }
+}
+
+
+/* tabs */
+
+.nav-tabs>li>a {
+  border-radius: 0;
+  color: $black-lighter;
+}
+
+.tab-content {
+  border-left: 1px solid $gray-light;
+  border-right: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
+  border-radius: 0;
+  padding: 15px;
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+/* progress bar */
+
+.mild-progress-style {
+  height: 8px;
+  margin-top: 60px;
+  border-radius: 0;
+  background: $gray-lighter;
+  box-shadow: none;
+  position: relative;
+
+  .progress-bar {
+    position: relative;
+    overflow: visible;
+    box-sizing: border-box;
+    text-align: left;
+    letter-spacing: 1px;
+//    text-transform: uppercase;
+    color: $black-light;
+    background-color: $black-light;
+    box-shadow: none;
+    font-size: 11px;
+    line-height: 30px;
+    .skills-info {
+      top: -35px;
+      position: relative;
+      font-size: 13px;
+    }
+    span {
+      float: right;
+      background: $black-lighter;
+      position: relative;
+      bottom: 0px;
+      color: $white;
+      padding:5px;
+      border-radius: 3px;
+      line-height: normal;
+      font-size: 9px;
+
+
+
+      &:after {
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        margin-left: -5px;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-top: 5px solid $black-lighter;
+        content: "";
+      }
+
+    }
+  }
+}
+
+.mild-progress-style.progress{
+  overflow: visible;
+}

@@ -1,0 +1,339 @@
+.section-wrapper {
+  margin-top: -60px;
+  padding-top: 60px
+}
+
+.section-space {
+  padding: 100px 0;
+}
+
+.section-gray {
+  background: lighten($gray,12%);
+}
+
+.section-dark {
+  background: $black-lighter;
+}
+
+.section-theme-color {
+  background: $theme-color;
+}
+
+section {
+  p {
+    margin-bottom: 30px;
+    line-height: 25px;
+  }
+}
+
+.section-top-bg {
+  height:500px;
+  background: $theme-color;
+  position: absolute;
+  width: 100%;
+}
+
+.fit-img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*about section*/
+
+.about-info {
+  .media-left{
+    padding-right: 50px;
+  }
+}
+
+.about-thumb {
+  img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin: 0;
+    float: left;
+  }
+}
+
+.info-list li {
+  padding: 0 0 1.5rem 0;
+  margin-bottom: .6rem;
+  label {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+
+  .me-sm-img {
+    img{
+      margin-top: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .me-sm-img {
+    img{
+      margin-top: 50%;
+    }
+  }
+}
+
+
+@media screen and (max-width:767px) {
+
+  .me-sm-img {
+    img{
+      margin-top: 2%;
+    }
+  }
+}
+
+
+/* zoom img effect */
+
+.zoom-img {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    img {
+      transform: scale3d(1.1, 1.1, 1);
+      transition: transform 0.3s ease;
+    }
+  }
+}
+
+/* team member */
+
+.team-member {
+  .team-info {
+    margin-top: 20px;
+
+    @media (max-width: 767px)
+    {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    padding:0 20px;
+    margin-bottom: 0;
+  }
+}
+
+
+/* social link */
+
+.social-link {
+  margin: 20px 0;
+
+  @media (max-width: 768px)
+  {
+    margin-bottom: 30px;
+  }
+
+  a {
+    display: inline-block;
+    text-align: center;
+    margin: 0 2px;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    border-radius: 50%;
+    border: 1px solid $gray-lighter;
+    color: lighten($black-lighter,25%);
+    &:hover {
+      color: $white;
+      border-color: $black;
+      background: $black;
+    }
+  }
+}
+
+.dark-txt {
+  .social-link {
+    a {
+      border: 1px solid $black-lighter;
+      color: $black-lighter;
+      &:hover {
+        color: $white;
+        border-color: $black;
+        background: $black;
+      }
+    }
+  }
+}
+
+/* parallax */
+
+.parallax {
+  background-attachment: fixed;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  position: relative;
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0, 0, 0, .7);
+  }
+}
+
+
+.parallax.light-overlay {
+
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(255,255, 255, .3);
+  }
+}
+
+
+// parallax image
+
+.parallax-quote {
+  background-image: url('../img/parallax/parallax-1.jpg')
+}
+
+.parallax-funfactor {
+  background-image: url('../img/parallax/parallax-2.jpg')
+}
+
+.parallax-promo {
+  background-image: url('../img/parallax/parallax-3.jpg')
+}
+
+.parallax-testimonial {
+  background-image: url('../img/parallax/parallax-4.jpg')
+}
+
+
+/*fun factor*/
+
+.fun-box {
+
+  i {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .value {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 991px) {
+     margin-bottom: 30px;
+  }
+}
+
+
+/*testimonial*/
+
+#testimonial-list {
+  .thumb {
+    display: inline-block;
+    margin-bottom: 20px;
+    img{
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+  }
+
+
+  p {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 300;
+  }
+
+  .testimonial-meta {
+    text-transform: uppercase;
+    font-weight: bold;
+    span {
+      opacity: .7;
+      font-size: 12px;
+    }
+  }
+}
+
+#testimonial-list.owl-theme .owl-dots .owl-dot.active span,
+#testimonial-list.owl-theme .owl-dots .owl-dot:hover span {
+  background: $theme-color;
+}
+
+@media (max-width: 768px) {
+  .container-fluid.pad-less {
+    padding: 0 15px!important;;
+  }
+}
+
+#testimonial-list.owl-theme .owl-dots .owl-dot span{
+  border-radius: 0px;
+}
+
+
+/*clients logo*/
+
+.client-section {
+  padding: 50px 0;
+}
+
+.clients-logo {
+  display: table;
+  width: 100%;
+}
+
+.client-item {
+  width: 200px;
+  height: 85px;
+  display: table-cell;
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+
+/*pattern-bg*/
+
+.pattern-bg{
+  background: url(../img/pattern.jpg) repeat center bottom;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}

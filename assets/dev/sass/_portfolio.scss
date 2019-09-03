@@ -1,0 +1,189 @@
+.portfolio-filter {
+  margin-bottom: 50px;
+  ul {
+    li {
+      display: inline-block;
+      border-radius: 0;
+      font-size: 14px;
+      margin-left: 10px;
+      color: $gray-dark;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      @media (max-width: 568px) {
+        margin-bottom: 20px;
+      }
+
+      &:not(:last-child):after{
+//        content: '...';
+//        padding-left: 10px;
+      }
+      a {
+        color: $black-light;
+        padding: 5px 10px;
+        margin-right: 5px;
+        position: relative;
+        font-size: 13px;
+        &:before{
+          background: $black-light;
+          width: 0px;
+          height: 1px;
+          position: absolute;
+          bottom: 0px;
+          content: '';
+          left: 0px;
+          opacity: 0;
+          transition: all ease .3s;
+          top: 14px;
+        }
+        &:hover {
+//          background: $black-light;
+          color: $theme-color;
+          &:before{
+            width: 100%;
+            opacity: 1;
+          }
+        }
+      }
+      .active {
+        color: $theme-color;
+        &:before{
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+    li:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+
+.portfolio {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 0;
+  list-style: none;
+  text-align: center;
+
+  .portfolio-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+
+    .portfolio-hover {
+      position: absolute;
+      top: 0;
+      background-color: rgba(0,0,0,.6);
+      left: 0;
+      bottom: 0;
+      right: 0;
+      zoom: 1;
+      filter: alpha(opacity=0);
+      opacity: 0;
+      transition: all .3s ease-in-out;
+      color: $white;
+
+      .title {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0px;
+        font-size: 20px;
+
+      }
+      .category {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        font-size: 16px;
+      }
+      .p-btn {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin-top: -20px;
+        font-size: 16px;
+        a {
+          width: 40px;
+          height: 40px;
+          line-height: 38px;
+          border: 1px solid $white;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 0 5px;
+          color:$white ;
+          outline: none;
+          &:hover {
+            background: $theme-color;
+            border-color: $theme-color;
+          }
+        }
+      }
+
+    }
+
+    &:hover .portfolio-hover {
+      zoom: 1;
+      filter: alpha(opacity=100);
+      opacity: 1;
+    }
+
+  }
+
+}
+
+
+.item-h1,
+.item-h2 {
+  height: 100% !important;
+  height: auto !important;
+}
+
+
+// grids
+
+
+.grid-3 {
+  .portfolio-grid {
+    width: 33.33%;
+    float: left;
+  }
+}
+
+
+.isotope-item {
+  z-index: 2;
+  padding:0;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property:    -moz-transform, opacity;
+  transition-property:         transform, opacity;
+}
+
+

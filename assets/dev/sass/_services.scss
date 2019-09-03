@@ -1,0 +1,28 @@
+.service-list {
+  margin-bottom: 50px;
+  display: block;
+  padding: 30px;
+  transition: all .3s;
+  &:hover {
+    box-shadow: 0 0 60px rgba(0,0,0,.1);
+    transition: all .3s;
+    position: relative;
+  }
+
+  .icon {
+    margin-bottom: 20px;
+    i {
+      font-size: 50px;
+      color: lighten($black, 20%);
+    }
+  }
+
+  .service-info {
+
+    p {
+      color: lighten($black-lighter, 30%);
+      margin-bottom: 0;
+    }
+  }
+
+}
