@@ -1000,11 +1000,11 @@
                         <div class="contact-wrap">
                             <h3 class="text-left m-top-0">Say Hi!</h3>
 
-                            <form role="form" id="contactForm" class="contact-form" data-toggle="validator">
+                            <form action="https://formspree.io/kellyjbenson@gmail.com" method="POST" role="form" id="contactForm" class="contact-form" data-toggle="validator">
                                 <div class="row">
                                     <div class=" col-md-6">
                                         <div class="form-group ">
-                                            <input type="text" id="name" class="form-control" placeholder="Name"
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Name"
                                                    required data-error="Please enter your name">
 
                                             <div class="help-block with-errors"></div>
@@ -1013,7 +1013,7 @@
 
                                     <div class=" col-md-6">
                                         <div class="form-group ">
-                                            <input type="email" class="email form-control" id="email"
+                                            <input type="email" name="email" class="email form-control" id="email"
                                                    placeholder="Email" required
                                                    data-error="Please enter your email">
 
@@ -1023,7 +1023,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="controls">
-                                        <input type="text" id="msg_subject" class="form-control" placeholder="Subject"
+                                        <input type="text" name="subject" id="msg_subject" class="form-control" placeholder="Subject"
                                                required data-error="Please enter your message subject">
 
                                         <div class="help-block with-errors"></div>
@@ -1031,14 +1031,14 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="controls">
-                                        <textarea id="message" rows="7" placeholder="Massage" class="form-control"
+                                        <textarea id="message" name="text" rows="7" placeholder="Message" class="form-control"
                                                   required data-error="Write your message"></textarea>
 
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
 
-                                <button type="submit" id="submit" class="btn solid-btn-dark btn-radius">Submit</button>
+                                <button value="Send" type="submit" id="submit" class="btn solid-btn-dark btn-radius">Submit</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                             </form>
                         </div>

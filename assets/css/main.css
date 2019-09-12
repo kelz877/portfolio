@@ -307,14 +307,14 @@ header
 {
     color: #82b440;
 }
-.navbar-inverse .navbar-nav > li.current > a:before,
+/* .navbar-inverse .navbar-nav > li.current > a:before,
 .navbar-inverse .navbar-nav > li > a:focus:before,
 .navbar-inverse .navbar-nav > li > a:hover:before
 {
     width: 100%;
 
     opacity: 1;
-}
+} */
 .navbar-inverse .navbar-nav.navbar-link-dark li a
 {
     color: #333;
@@ -1692,22 +1692,22 @@ portfolio
 {
     color: #82b440;
 }
-.portfolio-filter ul li a:hover:before
+/* .portfolio-filter ul li a:hover:before
 {
     width: 100%;
 
     opacity: 1;
-}
+} */
 .portfolio-filter ul li .active
 {
     color: #82b440;
 }
-.portfolio-filter ul li .active:before
+/* .portfolio-filter ul li .active:before
 {
     width: 100%;
 
     opacity: 1;
-}
+} */
 .portfolio-filter ul li:first-child
 {
     margin-left: 0;
